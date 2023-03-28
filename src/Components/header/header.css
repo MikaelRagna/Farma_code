@@ -1,0 +1,31 @@
+.header-pmenos{
+  background-color: #FFFFFF;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 4px #007dc5;
+  box-shadow: 0 0 7px 0;
+  padding: 20px 0 30px;
+}
+
+.header-logoo{
+  margin-left: 2em;
+  width: 8.3em;
+}
+
+.header-logoo:hover{
+  cursor: pointer;
+}
+
+.btn-content{
+  margin-right: .5rem;
+}
+
+.btn-text{
+  width: auto;
+  flex-wrap: wrap;
+}
+
+
+
+

@@ -1,0 +1,35 @@
+.conteiner-header-menu{
+    background: #fff;
+    padding-top: 0em;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    height: 4em;
+    font-size: 14px;
+    width: 100%;
+    z-index: 997;
+    position: relative;
+}
+
+.menu-header{
+    margin-left: 2em;
+    margin-right: 5em;
+    color: #0054a6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icon-menu{
+    content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M.8 4h13.583c.44 0 .8.449.8.997v.107c0 .548-.36.997-.8.997H.8c-.44 0-.8-.449-.8-.997v-.107C0 4.449.36 4 .8 4zm0 5.252h8.426c.44 0 .8.449.8.997v.107c0 .549-.36.997-.8.997H.8c-.44 0-.8-.448-.8-.997v-.107c0-.548.36-.997.8-.997z' fill='%230054A6'/%3E%3C/svg%3E");
+    margin-right: 1em;
+}
+
+.opcoes-menu{
+    margin-right:2em ;
+} 
+
+.opcoes-menu:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+

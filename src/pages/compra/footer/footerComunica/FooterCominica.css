@@ -1,0 +1,35 @@
+.footerCominica{
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    padding-top: 1em;
+   
+}
+
+.texto-Sac{
+    font-size: 12px;
+}
+
+.text-Sac-tel{
+    font-size: 21px;
+    color: #0054a6;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 25px;
+}
+.text-email{
+    font-size: 18px;
+    color: #0054a6;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.conteiners-informa{
+    margin:  2em;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 1.5em;
+}

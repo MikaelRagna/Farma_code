@@ -1,0 +1,25 @@
+.titulo-conteiner{
+    padding-top: 2em;
+    margin-left: 1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.gridProdutos{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 4em;
+    justify-items: center;
+    z-index: 996;
+    translate: scale(1.2em);
+}
+
+.conteineCards{
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #f4f4f4;
+}

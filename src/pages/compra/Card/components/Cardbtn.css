@@ -1,0 +1,22 @@
+.btn-Card{
+    display: flex;
+    justify-content: space-between;
+    width: 93.3%;
+    border-radius: 2em;
+    border: 2.5px solid #82ba41;
+    height: 1.25em;
+    background-color: #fff;
+    padding: .5em;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.btn-valor-produto{
+    color: #82ba41;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    margin-left: .4em;
+
+}

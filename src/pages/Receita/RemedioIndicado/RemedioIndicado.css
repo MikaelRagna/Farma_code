@@ -1,0 +1,71 @@
+.remedios-indicado-main {
+  margin: 3.1875rem 0 4.875rem 4.25rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 72.25rem;
+}
+
+.remedios-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 18.625rem;
+  margin: 2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.remedios-box button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: #989696;
+  cursor: pointer;
+}
+
+.remedios-box button:hover{
+  color: red;
+  background: #ededed;
+}
+
+.remedios-indicados-info {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.remedios-indicados-info .info-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 14rem;
+  color: #000000;
+  
+}
+
+.remedios-indicados-info, .info-2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: wrap;
+  word-wrap: break-word;
+  width: 12.625rem;
+  color: #4D4B4B;
+}
+
+
+

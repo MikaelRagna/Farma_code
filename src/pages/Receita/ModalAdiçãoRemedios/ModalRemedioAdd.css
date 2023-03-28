@@ -1,0 +1,145 @@
+.sugestao {
+  position: absolute;
+  background-color: #eeeeee;
+  padding: 1rem 1rem;
+  width: 24.7rem;
+  height: 17.0625rem;
+  box-sizing: 1rem;
+  margin-top: 0.3125rem;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.back-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 0;
+  padding-top: 1rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #fff;
+  width: auto;
+  height: 35.0625rem;
+  left: 157px;
+  top: 165px;
+  z-index: 1;
+}
+.modal-box-fechar {
+  position: absolute;
+  right: 13rem;
+  top: 6rem;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #b5aeae;
+  cursor: pointer;
+}
+
+.modal-box-fechar:hover {
+  color: red;
+}
+
+.modal-box-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.modal-box-title .box-title {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin: 0;
+}
+.modal-box-title span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.modal-box-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2.3125rem 3rem 2.3125rem 3.6875rem;
+}
+
+.modal-box-label label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.modal-box-label input,
+textarea {
+  background-color: #eeeeee;
+  border: none;
+  width: 27.1875rem;
+  height: 3.0625rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 7px;
+  padding: 1rem;
+  align-items: flex-start;
+  font-family: sans-serif;
+  color: rgb(29, 29, 29);
+}
+
+.modal-box-medicamento {
+  color: rgb(29, 29, 29);
+}
+
+.container-inidicacao-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-inidicacao-btn button {
+  width: 15.125rem;
+  height: 3.0625rem;
+  background: #071ac4;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  border-radius: 7px;
+  margin: 2.3125rem 7.6875rem 4.125rem;
+}
+
+.container-inidicacao-btn button:disabled {
+  opacity: 0.5;
+}
+
+.modal-back-indicacao {
+  margin-left: 1.125rem;
+}
+.modal-back-indicacao textarea {
+  height: 14.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-box input:focus,
+textarea:focus {
+  outline: none;
+}

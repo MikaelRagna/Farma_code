@@ -1,0 +1,178 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.container-receita {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  background-color: #fff;
+  
+}
+
+.container-receita-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3.8125rem;
+}
+
+.container-receita-header img{
+  width: 7.875rem;
+}
+
+.container-receita-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20.9375rem;
+}
+
+.container-receita-title h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.container-receita-title h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #686868;
+}
+
+.container-receita h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 4.25rem;
+  margin-bottom: 1.4375rem;
+}
+
+.container-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 4.25rem;
+}
+
+.label-nome {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #535353;
+}
+
+.label-nome input {
+  background-color: #eeeeee;
+  border: none;
+  width: 33.4375rem;
+  height: 1.1875rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  margin-top: 0.625rem;
+}
+
+.label-idade {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #535353;
+  margin-left: 0.6875rem;
+}
+
+.label-idade input {
+  background-color: #eeeeee;
+  border: none;
+  width: 6.4375rem;
+  height: 1.1875rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.label-dataValidade{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #535353;
+  margin-left: 1rem;
+}
+
+.label-dataValidade input{
+  background-color: #eeeeee;
+  border: none;
+  width: 6.4375rem;
+  height: 1.1875rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.container-label input:focus {
+  outline: none;
+}
+
+.prescricoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.4375rem;
+}
+
+.prescricoes button {
+  margin-left: 4.25rem;
+  width: 18.3125rem;
+  height: 2.9375rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #1a30ff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.concluir-receita{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.3125rem;
+  height: 2.9375rem;
+  margin-left: 31.3125rem;
+  margin-bottom: 2.9375rem;
+  border: none;
+  border-radius: 1rem;
+  background: #1A30FF;
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.concluir-receita:disabled{
+  display: none;
+}
+
+
+
+
+
+
+
+
+

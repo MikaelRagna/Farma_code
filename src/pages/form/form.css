@@ -1,0 +1,166 @@
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    .main{
+        background-color: #0054a6;
+        width: 100%;
+        height: 88.8vh;  
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 0;  
+    }
+    
+    .form_container{
+        color: black;
+        background-color: #fff;
+        height: auto;
+        margin-top: 3rem;
+        width: 30rem;
+        border-radius: .3rem;
+        box-shadow: 0 4px 37px rgb(0 0 0 / 15%);
+    }
+
+    .btn_change{
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 4px;
+        width: 50%;
+        border: none;
+        cursor: pointer;
+        padding: 20px 0px;
+    }
+
+    .btn_change:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+    .btn_change:focus{
+        background-color: #0054a6;
+    }
+
+    .btn_register{
+        border-left: none;
+    }
+
+    .login_container{
+        margin-top: .1rem;
+        padding: 4rem;
+        height: auto;
+    }
+
+    .register_container{
+        display: none;
+        padding: 4rem;
+        height: auto;
+    }
+
+    .form_container .form_title{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .form_container input{
+        outline: none;
+        margin-bottom: .5rem;
+        padding: 10px;
+        border: 2px solid rgb(0, 0, 0, 16%);
+        border-radius: .3rem;
+        width: 94%;
+    }
+
+    .h3_title{
+        opacity: .7;
+        font-size: 16px;
+        margin-bottom: .4rem;
+    }
+
+    .checkbox_container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+    }
+
+    .checkbox_container .input-checkbox{
+        width: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2px;
+    }
+
+    .msg_erro{
+        display: none;
+        font-size: 14px;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.288);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid red;
+    }
+
+    .msg_required{
+        display: none;
+        font-size: 14px;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.288);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid red;
+    }
+
+    .msg_required_reg{
+        display: none;
+        font-size: 14px;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.288);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid red;
+    }
+
+    .msg_erro_reg{
+        display: none;
+        font-size: 14px;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.288);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid red;
+    }
+
+    .msg_repass{
+        display: none;
+        font-size: 14px;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.288);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid red;
+    }
+
+    .msg_ok{
+        display: none;
+        font-size: 14px;
+        color: rgb(5, 136, 5);
+        background-color: rgba(2, 128, 13, 0.411);
+        padding: 10px;
+        justify-content: center;
+        border: .5px solid greenred;
+    }
+
+    .btn{
+        background-color: #0054a6;
+        color: white;
+        padding: 18px;
+        width: 100%;
+        border-radius: .3rem;
+        border:rgb(0 0 0 / 15%);
+        margin-top: 20px;
+    }

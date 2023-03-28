@@ -1,0 +1,103 @@
+body{
+  background-color: #f4f4f4 ;
+}
+
+.none{
+  display: none;
+}
+
+.header-pmenoss{
+  background-color: #FFFFFF;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  align-items: center;
+  z-index: 998; 
+  flex-wrap: wrap;
+  
+}
+
+.header-logo{ 
+  background-size: cover;
+  margin-top: 1.5em;
+  align-items: center;
+  width: 8.3em;
+  margin-left: 3em;
+}
+
+.buscador{
+  margin-right: 12em;
+  border: none;
+  border-radius: .5em;
+  background-color: #eeeeee;
+  padding: .5em;
+  width: 40%;
+  display: flex;
+}
+
+.buscador-input{
+  background-color: #eeeeee;
+  border:none;
+  width: 100%;
+}
+
+.buscador-input:focus{
+  outline: none;
+}
+
+.busca-lupa{
+  width: 1.8em;
+}
+
+.btn-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11%;
+}
+
+.btn-text{
+  margin: 0 2em 0 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+  width: 1.5em;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.btn-cesta{
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='60' height='60' background-image='cover' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23ED1D24' fill-opacity='.2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.116 10.363a.814.814 0 00-1.367.018l-4.126 6.554H9.815a.814.814 0 00-.782 1.042l3.165 10.851c.152.521.63.88 1.173.88h14.133c.543 0 1.021-.359 1.173-.88l3.165-10.85a.814.814 0 00-.782-1.043h-5.563l-4.381-6.572zm2.423 6.572l-3.081-4.623-2.91 4.623h5.991zm-.972 6.386a2.129 2.129 0 11-4.258 0 2.129 2.129 0 014.258 0z' fill='%23ED1D24'/%3E%3C/svg%3E");
+  background-size: content;
+  width: 3em;
+  border: none;
+  border-radius: 2em;
+  height: 3em;
+  cursor: pointer;
+}
+
+.item-add{
+  position: absolute;
+  background-color: #0004ff;
+  font-size: .9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: .28rem;
+  height: .28rem;
+  padding: .5em;
+  border-radius: 510rem;
+  margin-left: -3.8rem;
+  margin-top: -2rem;
+}
+
+.backgroundCard{
+  background: #f4f4f4;
+}
+.header{
+  width: 100%;
+}

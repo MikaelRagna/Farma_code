@@ -1,0 +1,8 @@
+.listaResultado {
+  display: flex;
+  flex-direction: column;
+}
+
+.listaResultado img {
+  width: 10vw;
+}
