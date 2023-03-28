@@ -4,10 +4,14 @@ import { ModalContext } from "../../header/modalCesta/useModalContext/ModalConte
 
 export default function Cardbtn(props) {
     const {quantidadeTotal, setQuantidadeTotal, setSacola, sacola } = useContext(ModalContext)
-    const [quantidadeIndividual, setQuantidadeIndividual] = useState(0)
+    const [quantidadeIndividual, setQuantidadeIndividual] = useState(1)
     const item = {
         ...props.produto,
-        quantidade:quantidadeIndividual
+        quantidade:quantidadeIndividual,
+        precoTotal: parseFloat(props.preco),
+        remedio:{
+            nome:props.produto.nome
+        } 
     }
     useEffect(() => {
         setSacola([
@@ -15,13 +19,14 @@ export default function Cardbtn(props) {
             item
         ])
         setQuantidadeIndividual(item.quantidade+1)
-        setQuantidadeTotal(quantidadeTotal+ 1)
+        setQuantidadeTotal(quantidadeTotal+1)
     }, [])
 
     const handleAdd = () => {
         props.setValue(props.value + 1)
         setQuantidadeTotal(quantidadeTotal + 1)
         preenche()
+        console.log(item.preco);
     }
 
     const handleRemove = () => {
@@ -48,6 +53,7 @@ export default function Cardbtn(props) {
             sacola.filter((element) => {
                 if (element.nome == item.nome) {
                     element.quantidade+=1
+                    element.precoTotal = parseFloat(element.preco) * element.quantidade
                 }
             })
     }

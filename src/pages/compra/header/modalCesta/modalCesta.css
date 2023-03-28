@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    background: #cccccc;
+    background: #FFF;
     right: 0;
     align-items: center;
     background-blend-mode: darken;
@@ -45,7 +45,7 @@
     width: 100%;
     background: #0054a6;
     align-items: center;
-    height: 3em;
+    height: 6em;
     border-radius: 0 0 .5em .5em;
 }
 
@@ -69,6 +69,18 @@
 
 .btn-ofertas{
     width: 95%;
+    background-color: #001aff;
+    color: #FFFFFF;
+    border-radius: 2em;
+    padding: .5em;
+    width: 90%;
+    border: none;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 .muda{
@@ -84,8 +96,27 @@
     background-color: red;
 }
 
-.item{
+.conteiner-item{
+    display: flex;
     color:#0054a6;
+   width: 100%;
+   border-bottom: 1px solid #f9f9f9
+  
+}
+
+.btn-produto-cesta{
+    border: none;
+    background: none;
+    margin: 0.3em;
+}
+
+.item-cesta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1em;
+    height: 2.5em;
 }
 
 .item-tot{
@@ -100,4 +131,30 @@
     padding: .5em;
     border-radius: 510rem;
     margin-right: 1em;
+}
+
+.conteiner-valores{
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 1em;
+
+}
+
+.text-subtotal{
+    font-size: 13px;
+    color: #858585;
+    margin-bottom: 2px;
+}
+
+.text-valorTotal{
+    font-weight: bold;
+    color: #3700b8;
 }

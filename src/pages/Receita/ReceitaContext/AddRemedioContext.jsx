@@ -66,8 +66,8 @@ export function AddRemedioContextProvider({ children }) {
         console.log(data);
         GeraPdf(data);
       })
-      // .catch((err) => console.error(err));
-      // navigate('/dashboard')
+      .catch((err) => console.error(err));
+      navigate('/dashboard')
     }
 
   return (

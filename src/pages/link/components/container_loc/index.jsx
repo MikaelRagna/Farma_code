@@ -2,6 +2,9 @@ import React from "react";
 
 export default function Loc(props) {
 
+  const ord_cres = props.loc.lojas.filter(e => e.dist > e.dist)
+
+  console.log(ord_cres);
 
   return (
     <div>

@@ -8,10 +8,10 @@ import Header2 from './header2/header2';
 import CriandoCard from '../ConteinerCard/conteinerCard';
 
 function Header() {
-  const { openModal, quantidadeTotal, receitaCesta} = useContext(ModalContext)
+  const { openModal, quantidadeTotal,  cestaTotal} = useContext(ModalContext)
   let cond = false
 
-  if( quantidadeTotal != 0 ||receitaCesta !=0){
+  if( quantidadeTotal != 0 || cestaTotal !=0){
     cond = true
   }
 
@@ -25,7 +25,7 @@ function Header() {
         </div>
         <div className='btn-content'>
           <button onClick={openModal} className='btn-cesta' />
-          <div className={cond ? 'item-add' : 'none'} onChange={() => mudaSacola()}>{ quantidadeTotal + receitaCesta }</div>
+          <div className={cond ? 'item-add' : 'none'} >{  cestaTotal }</div>
           <span className='btn-text'>Minha Cesta</span>
           <ModalCesta />
         </div>

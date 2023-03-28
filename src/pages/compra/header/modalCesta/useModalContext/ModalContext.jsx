@@ -8,7 +8,9 @@ export function ModalProvider ({ children }) {
   const [modal, setModal] = useState(true); //
   const [quantidadeTotal, setQuantidadeTotal] = useState(0)
   const [sacola, setSacola] = useState([])
-  const [receitaCesta, setReceitaCesta] = useState(0)
+  
+  const [cestaTotal, setCestaTotal] = useState(0)
+
   const openModal = ()=>{
     setModal(!modal)
   }
@@ -18,7 +20,7 @@ export function ModalProvider ({ children }) {
   }
   
   return (
-    <ModalContext.Provider value={{ modal, setModal, openModal, closeModal, quantidadeTotal, setQuantidadeTotal, sacola, setSacola, receitaCesta, setReceitaCesta }}>
+    <ModalContext.Provider value={{ modal, setModal, openModal, closeModal, quantidadeTotal, setQuantidadeTotal, sacola, setSacola, cestaTotal, setCestaTotal }}>
       {children}
     </ModalContext.Provider>
   );

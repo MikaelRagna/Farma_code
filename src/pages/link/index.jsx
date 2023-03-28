@@ -16,28 +16,9 @@ export default function Link() {
 
   const navigate = useNavigate()
 
-  const location = {
-    localizacao_cliente: {
-      latitude: lat,
-      longitude: long,
-    },
-    lista_remedios: idMed,
-  };
+  
 
   useEffect(() => {
-    fetch(`${api.link}/produto/todos`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => setProdutos(data));
-
-    navigator.geolocation.getCurrentPosition((position) => {
-      setLat(position.coords.latitude), setLong(position.coords.longitude);
-    });
-
     fetch(`${api.link}/receita/get/${hash}`, {
       method: "GET",
       headers: {
@@ -48,6 +29,7 @@ export default function Link() {
       .then((data) => {
         setIdMed(data.receita.lista_de_medicamentos);
         setReceita(data.receita);
+        console.log(data);
 
         let ids = [];
         data.receita.lista_de_medicamentos.map((e) => {
@@ -56,6 +38,19 @@ export default function Link() {
 
         setIdMed(ids);
       });
+
+      const location = {
+        localizacao_cliente: {
+          latitude: lat,
+          longitude: long,
+        },
+        lista_remedios: idMed,
+      };
+
+      navigator.geolocation.watchPosition(position => {
+        setLat(position.coords.latitude);
+        setLong(position.coords.longitude)
+      })
 
     fetch(`${api.link}/calcular/distancia`, {
       method: "POST",
@@ -96,7 +91,7 @@ export default function Link() {
               </p>
 
               {receita.lista_de_medicamentos.map((item, i) => (
-                <Item nome={item.remedio.nome} desc={item.prescricao} key={i} />
+                <Item nome={item.remedio.nome} desc={item.prescricao} key={i} quantidade={item.quantidade}/>
               ))}
             </>
           ) : (

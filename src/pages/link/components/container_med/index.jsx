@@ -1,19 +1,17 @@
 import React from "react";
-import './index.css'
+import "./index.css";
 
-export default function Item(props){
-    return(
+export default function Item(props) {
+  return (
+    <div>
+      <div className="item_title">
         <div>
-            <div className="item_title">
-
-            {props.nome}
-            </div>
-
-            <div className="item_desc">
-
-            {props.desc}
-            </div>
-
+          {" "}
+          {props.quantidade} unidades de <span className="">{props.nome}</span>
         </div>
-    )
+      </div>
+
+      <div className="item_desc">{props.desc}</div>
+    </div>
+  );
 }
